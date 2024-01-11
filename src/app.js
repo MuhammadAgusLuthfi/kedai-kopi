@@ -94,8 +94,8 @@ checkoutButton.addEventListener('click', async function (e) {
   const formData = new FormData(form);
   const data = new URLSearchParams(formData);
   const objData = Object.fromEntries(data);
-  //const message = formMessage(objData);
-  //window.open('http://wa.me/62895365398242?text=' + encodeURIComponent(message));
+  const message = formMessage(objData);
+  window.open('http://wa.me/62895365398242?text=' + encodeURIComponent(message));
 
 
   //minta transasion token
