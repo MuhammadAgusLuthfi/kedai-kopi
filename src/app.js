@@ -99,20 +99,20 @@ checkoutButton.addEventListener('click', async function (e) {
 
 
   //minta transasion token
-  try {
-    const response = await fetch('php/placeOrder.php', {
-      method: 'POST',
-      body: data,
-    });
-    const token = await response.text();
-    // console.log(token);
-
-    window.snap.pay(token);
-
-  } catch (err) {
-    console.log(err.message);
-  }
-
+  /* try {
+     const response = await fetch('php/placeOrder.php', {
+       method: 'POST',
+       body: data,
+     });
+     const token = await response.text();
+     // console.log(token);
+ 
+     window.snap.pay(token);
+ 
+   } catch (err) {
+     console.log(err.message);
+   }
+ */
 
 
 
